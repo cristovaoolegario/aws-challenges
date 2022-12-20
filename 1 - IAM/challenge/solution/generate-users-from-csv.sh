@@ -20,7 +20,11 @@ do
 
 resource "aws_iam_user_group_membership" "'$userstr'_group_membership" {
   user = aws_iam_user.'$userstr'.name
-  groups = [\n\t\taws_iam_group.'$grupo'.name,\n\t]\n}\n' >> users.tf
+  groups = [\n\t\taws_iam_group.'$grupo'.name,\n\t]\n}
+  
+resource "aws_iam_user_policy_attachment" "'$userstr'_password_policy" {
+  user       = aws_iam_user.'$userstr'.name
+  policy_arn = "${data.aws_iam_policy.IAMUserChangePassword.arn}"\n}\n' >> users.tf
 	fi
     
 

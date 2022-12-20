@@ -18,6 +18,9 @@ data "aws_iam_policy" "AmazonVPCFullAccess" {
 data "aws_iam_policy" "ReadOnlyAccess" {
   arn = "arn:aws:iam::aws:policy/ReadOnlyAccess"
 }
+data "aws_iam_policy" "IAMUserChangePassword" {
+  arn = "arn:aws:iam::aws:policy/IAMUserChangePassword"
+}
 
 resource "aws_iam_group_policy_attachment" "cloud-admin-full-access-policy-attach" {
   group       = "${aws_iam_group.CloudAdmin.name}"
