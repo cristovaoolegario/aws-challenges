@@ -1,0 +1,8 @@
+fileignoreconfig:
+- filename: devops-exercises/AWS/IAM/.terraform.lock.hcl
+  checksum: 8c4d85c87ab96339e1bd205b8c7b59490a30b52a95cfe6297af1d527393e141d
+- filename: devops-exercises/AWS/IAM/IAM.md
+  checksum: d8d23b7653f73513b9c9476a7ce7e11e0644e2c91026f9e4940be00856cdbec7
+- filename: devops-exercises/AWS/IAM/create_user.tf
+  checksum: d89ca9e91eeb4c4a4ffb3ef832b2e36c0a276900ec44b67a4b5158e7bcaa8d85
+version: "1.0"
